@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+    /*Peça para o usuário informar uma data em dias com horas, minutos e segundos e retorne a data em segundos.
+    */
+
+    //ENTRADA
+    const dias = Number (prompt ("Informe uma data com o dia"));
+    const horas = Number (prompt("Horas"));
+    const minutos = Number (prompt("Minutos"));
+    const segundos = Number (prompt("Segundos"));
+
+    //PROCESSAMENTO
+    const diasParaSegundo = dias*60*24;
+    const horasParaSegundo = horas*60*60;
+    const minutosParaSegundo = minutos*60;
+    const dataParaSegundo = diasParaSegundo+horasParaSegundo+minutosParaSegundo+segundos;
+
+    //SAÍDA
+    document.write(`Esta data convertida resulta em ${dataParaSegundo} segundos`);
+</script>

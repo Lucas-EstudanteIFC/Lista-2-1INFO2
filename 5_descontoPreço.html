@@ -1,0 +1,17 @@
+<meta  charset="UTF-8">
+
+<script>
+    /*Peça para o usuário informar o preço de um produto e também informar qual a porcentagem de desconto que será aplicado no preço do produto. Faça o cálculo do preço final do produto após aplicar a porcentagem de desconto e apresente o resultado.
+    */
+
+   //ENTRADA
+   const preçoTotal = Number (prompt("Insira aqui o preço de um produto"));
+   const desconto = Number (prompt ("Insira aqui o valor de desconto"));
+
+   //PROCESSAMENTO
+   const valorDesconto = preçoTotal/100*desconto;
+   const valorFinal = preçoTotal-valorDesconto;
+
+   //SAÍDA
+   document.write(`O valor do preço com desconto é de ${valorFinal}`);
+</script>
